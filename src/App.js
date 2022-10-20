@@ -8,14 +8,10 @@ import Exercises from "./components/Exercise"
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <Icons />
-      <Search />
-      <Exercises />
-      
-    </div>
+   <Routes>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/exercises" element={<Exercises />}/>
+   </Routes>
   );
 }
 

@@ -2,12 +2,24 @@ span {
   color:red;
 }
 
+p, nav{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  font-family: 'Oswald', sans-serif;
+}
+
+
 .header-container{
   display: flex;
   width: 100%;
   height: 400px;
-  background-color: antiquewhite;
+  background-color: black;
+  color: white;   
 }
+
+
 
 .header-left {
  width: 50%;
@@ -30,8 +42,9 @@ width: 690px;
   .header-container {
     display: flex;
     flex-direction: column;
-    height: 483px;
+    height: 423px;
     padding-top:35px;
+    
   }
 
   .header-right{
@@ -53,12 +66,16 @@ width: 690px;
 
 
 .icon-container{
-background-color: aqua;
+  background-color: black;
 display: flex;
 flex-wrap: wrap;
 width: 100%;
 height: 450px;
 justify-content: space-evenly;
+color: white;
+border: 1px solid white;
+border-left: none;
+border-right: none;
 }
 
 .icons{
@@ -73,6 +90,23 @@ justify-content: space-evenly;
   align-self: center;
 }
 
+@media(max-width:800px) {
+  .icon-container{
+    padding-top: 25px;
+    text-align: center;
+  }
+}
+
+@media(max-width:555px) {
+  .icon-container{
+    padding-top: 45px;
+    height: 475px;
+    text-align: center;
+  }
+}
+
+
+
 
 
 
@@ -86,8 +120,9 @@ justify-content: space-evenly;
   display: flex;
   height: 400px;
   text-align: center;
- background-color: beige;
+  background-color: black;
  flex-direction: column;
+ color: white;
 }
 
 input{
@@ -111,15 +146,24 @@ input{
 
 
 .Exercise-container {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  width: 100%;
   align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
   }
 
 .exercise-cards {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  text-align: center;
-  width: 25%;
-  border: 1px solid black;
+  margin-top: 25px;
+ 
+}
+
+.exercise-cards img {
+  width: 30%;
+  display: flex;
+  align-self: center;
 }

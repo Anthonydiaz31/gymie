@@ -14,6 +14,7 @@ function Header() {
         <div className='header-right'>
             <img src={headerIMG} alt="man-lifting-weights" />
         </div>
+        
     </header>
   )
 }

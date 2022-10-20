@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
- <nav class="navbar ">
+ <nav class="navbar mx-5">
   <div class="container-fluid">
     <a class="navbar-brand" href='/'>Gymie</a>
     <form class="d-flex" role="search">

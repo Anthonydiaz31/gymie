@@ -1,7 +1,7 @@
 import React from 'react'
 import name from "../pictures/exercises.png"
 import muscle from "../pictures/muscle.png"
-import equipment from "../pictures/weights.png"
+import equipment from "../pictures/bell.png"
 
 function Icons() {
   return (

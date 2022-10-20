@@ -1,23 +1,20 @@
 import React, {useState} from 'react'
 import Exercise from './Exercise';
+import Link from "react-router-dom";
 
 function Search() {
   
   const [search,setSearch] = useState("");
-
-  function handleChange(e) {
-    const {value} = e.target;
-    setSearch(value)
-  }
-
   
   
+
+  <Exercise search={search} />
   
   return (
     <section className='search-container'>
       <div className='search-heading'>
         <h1>Search Workouts:</h1>
-        <input type="search" placeholder="Search..." />
+        <input type="search" placeholder="Search..." onChange={e =>setSearch(e.target.value) }/>
         <button >Search</button>
         </div> 
 
@@ -30,10 +27,10 @@ function Search() {
                 Muscle Groups
            </button>
            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/">Core</a></li>
-              <li><a class="dropdown-item" href="/">Back</a></li>
-              <li><a class="dropdown-item" href="/">Legs</a></li>
-              <li><a class="dropdown-item" href="/">Arms</a></li>
+              <li><a class="dropdown-item" href="/exercises">Core</a></li> 
+              <li><a class="dropdown-item" href="/exercises">Back</a></li>
+              <li><a class="dropdown-item" href="/exercises">Legs</a></li>
+              <li><a class="dropdown-item" href="/exercises">Arms</a></li>
             </ul>
           </div>
         </div>
