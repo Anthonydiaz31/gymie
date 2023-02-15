@@ -18,6 +18,9 @@ h1{
   background-color: black;
   color: white;   
 }
+.header-left-hidden{
+  display: none;
+}
 
 
 
@@ -92,18 +95,16 @@ justify-content: space-evenly;
 
 @media(max-width:800px) {
   .icon-container{
-    padding-top: 25px;
+    padding: 40px;
     text-align: center;
+    margin-top: 80px;
+    height: 600px;
+    
+    
   }
 }
 
-@media(max-width:555px) {
-  .icon-container{
-    padding-top: 45px;
-    height: 475px;
-    text-align: center;
-  }
-}
+
 
 
 
@@ -145,7 +146,7 @@ input{
 
 
 
-.Exercise-container {
+ .Exercise-container {
   display: inline-block;
   width: 100%;
   align-items: center;
@@ -166,4 +167,4 @@ input{
   width: 30%;
   display: flex;
   align-self: center;
-}
+} 

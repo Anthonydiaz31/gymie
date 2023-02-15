@@ -39,8 +39,8 @@ const handleChange = async (e) => {
           return (<>
             <h1>{capsTitle}</h1>
             <img src={workout.gifUrl} alt="gif" />
-            <p>{workout.bodyPart}</p>
-            <p>{workout.equipment}</p>
+            <p>{workout.bodyPart.charAt(0).toUpperCase()  +workout.bodyPart.slice(1)}</p>
+            <p>{workout.equipment.charAt(0).toUpperCase() + workout.equipment.slice(1)}</p>
             
           </>)
         })}
